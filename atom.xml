@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[The Distinctionl Blog]]></title>
+  <link href="http://blog.distinctionl.com/atom.xml" rel="self"/>
+  <link href="http://blog.distinctionl.com/"/>
+  <updated>2014-09-01T14:05:28+01:00</updated>
+  <id>http://blog.distinctionl.com/</id>
+  <author>
+    <name><![CDATA[Oliver Woodford]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
