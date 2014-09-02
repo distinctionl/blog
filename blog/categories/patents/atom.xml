@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[The Distinctionl Blog]]></title>
-  <link href="http://blog.distinctionl.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: patents | The Distinctionl Blog]]></title>
+  <link href="http://blog.distinctionl.com/blog/categories/patents/atom.xml" rel="self"/>
   <link href="http://blog.distinctionl.com/"/>
   <updated>2014-09-02T15:09:08+01:00</updated>
   <id>http://blog.distinctionl.com/</id>
