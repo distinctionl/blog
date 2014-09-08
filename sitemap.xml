@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://blog.distinctionl.com/blog/2014/09/08/get-lost-in-the-cloud/</loc>
+    <lastmod>2014-09-08T14:05:42+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.distinctionl.com/blog/2014/09/02/deepmind-patents-i/</loc>
     <lastmod>2014-09-02T14:12:01+01:00</lastmod>
     <priority>0.8</priority>
@@ -11,14 +17,14 @@
   
   <url>
     <loc>http://blog.distinctionl.com/blog/archives/</loc>
-    <lastmod>2014-09-03T12:04:45+01:00</lastmod>
+    <lastmod>2014-09-08T14:15:19+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://blog.distinctionl.com/</loc>
-    <lastmod>2014-09-03T12:04:45+01:00</lastmod>
+    <lastmod>2014-09-08T14:15:19+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
