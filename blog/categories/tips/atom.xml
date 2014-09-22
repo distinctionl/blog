@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[The Distinctionl Blog]]></title>
-  <link href="http://blog.distinctionl.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: tips | The Distinctionl Blog]]></title>
+  <link href="http://blog.distinctionl.com/blog/categories/tips/atom.xml" rel="self"/>
   <link href="http://blog.distinctionl.com/"/>
   <updated>2014-09-22T19:32:27+01:00</updated>
   <id>http://blog.distinctionl.com/</id>
@@ -44,8 +44,8 @@
 
 <p>I have done this below, using the example dataset I mentioned earlier, for two cases, the first using just one material composition value (or data feature), and the second using all four values (or features) given in the dataset.</p>
 
-<p><img src="http://blog.distinctionl.com/images/learning_curve_1.png" alt="" />
-<img src="http://blog.distinctionl.com/images/learning_curve_2.png" alt="" /></p>
+<p><img src="/images/learning_curve_1.png" alt="" />
+<img src="/images/learning_curve_2.png" alt="" /></p>
 
 <p>What the graphs show is that at a certain training set size, the average data costs converge on a stable value, which is the same for the training and test sets. They also show that the learning curves for the case of just one feature have a significantly higher data cost than the other case.</p>
 
@@ -55,8 +55,8 @@
 
 <p>Variance is the name given to a variable error, in the case of learning curves an error which affects the test set but not the training set. Below I have plotted two further pairs of learning curves. In the case of the first graph I have used even more features, by including all quadratic combinations of features, giving twenty features in total. What you can see is that the data costs do not quite stabilize as the training set size increases, though they look like they could converge with more data. In addition, the data cost of the test set is significantly higher than that of the training set, so this graph exhibits high variance.</p>
 
-<p><img src="http://blog.distinctionl.com/images/learning_curve_3.png" alt="" />
-<img src="http://blog.distinctionl.com/images/learning_curve_4.png" alt="" /></p>
+<p><img src="/images/learning_curve_3.png" alt="" />
+<img src="/images/learning_curve_4.png" alt="" /></p>
 
 <p>High variance is caused by the model overfitting the training data, and therefore not transferring well to the test data. Overfitting can be caused by having many unnecessary features (as is likely in the case above), or not enough training data. One way of reducing overfitting is to use a regularization term in the cost function, which prefers simpler models. I have used a quadratic cost on the model parameters to regularize the model, whose learning curves are shown in the second graph above. This graph exhibits low variance, indicating that the model is now not overfit.</p>
 
@@ -85,42 +85,6 @@
 
 
 <p>I hope that is useful. Code for generating these figures can be found in <em>bias_variance_analysis_demo.m</em> from our <a href="http://github.com/distinctionl/ml_examples">ml_examples GitHub repository</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Get lost in the cloud]]></title>
-    <link href="http://blog.distinctionl.com/blog/2014/09/08/get-lost-in-the-cloud/"/>
-    <updated>2014-09-08T14:05:42+01:00</updated>
-    <id>http://blog.distinctionl.com/blog/2014/09/08/get-lost-in-the-cloud</id>
-    <content type="html"><![CDATA[<p>Hopefully you find <a href="http://www.ted.com">TED talks</a> as inspiring and thought provoking as I do. Anyway, I came across a real gem for all researchers the other day. Now this is nothing to do with cloud storage or cloud computing. It posits the idea that in order to have a great new idea, you have to get lost and confused. Mindblowingly simple, yet insightful. Enjoy&hellip;</p>
-
-<iframe src="https://embed-ssl.ted.com/talks/uri_alon_why_truly_innovative_science_demands_a_leap_into_the_unknown.html" width="640" height="360" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-
-
-<p>Now get lost.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[DeepMind patents: I]]></title>
-    <link href="http://blog.distinctionl.com/blog/2014/09/02/deepmind-patents-i/"/>
-    <updated>2014-09-02T14:12:01+01:00</updated>
-    <id>http://blog.distinctionl.com/blog/2014/09/02/deepmind-patents-i</id>
-    <content type="html"><![CDATA[<p>I&rsquo;m sure many of you will have heard about <a href="http://www.bbc.co.uk/news/technology-25908379">Google&rsquo;s £400m purchase</a> of <a href="http://deepmind.com">DeepMind</a>, a startup founded to solve Artificial Intelligence (AI). They focussed on developing algorithms that would allow machines to learn how to play computer games. It&rsquo;s this generality which makes their approach AI rather than Machine Learning (ML). And apparently the computer gets pretty good, eventually beating human players.</p>
-
-<p>What intrigues me is how this technology works. Of course much of it is a closely guarded secret, but prior to being bought, DeepMind did file three patents, so I thought it would be interesting to read these. In this blog post, I&rsquo;ll be taking a look at the first of them, <a href="http://www.google.com/patents/US20140185959">US20140185959</a>.</p>
-
-<!-- more -->
-
-
-<p>To save some of you some time, it&rsquo;s probably worth saying up front that this particular patent doesn&rsquo;t contain any AI or ML technology. Instead, it presents two ideas, to be used in conjunction, for the purpose of searching for images using example images, a.k.a. <em>content-based image retrieval</em>.</p>
-
-<p>The first idea is what I&rsquo;ll call the <em>composite feature query</em>. Basically, it&rsquo;s an image query that consists of user-selected image features from one or more images. For example, if you wanted to find a particular sofa you could use the shape and colour features of a sofa in one image with the texture of some curtains in another image as your query.</p>
-
-<p>The second idea is what I&rsquo;ll call <em>iterated query refinement</em>. You start with one or more features from one image, do a search, then use one or more extra features from the original image or the search results to augment the query, and repeat the search. This process can be repeated until you find an image you&rsquo;re happy with.</p>
-
-<p>That&rsquo;s it! It&rsquo;s not related to learning to play computer games. But then, that could be just the toy problem that DeepMind use to develop their algorithms, and perhaps making online shopping easier is the real target application (or at least one of them). Nor does it explain how image features might be described and matched within the search process - the tricky ML part. Perhaps the answer to that will crop up in other patents. But I am reminded of something my friend Tom at <a href="http://metail.com/">Metail</a> once told me, which was that if you&rsquo;re a business that&rsquo;s looking to get bought, then you need an IP portfolio that&rsquo;s broad, covering all areas of your business, not just the core technology.</p>
 ]]></content>
   </entry>
   
