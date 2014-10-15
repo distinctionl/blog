@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fun | The Distinctionl Blog]]></title>
   <link href="http://blog.distinctionl.com/blog/categories/fun/atom.xml" rel="self"/>
   <link href="http://blog.distinctionl.com/"/>
-  <updated>2014-09-27T11:15:37+01:00</updated>
+  <updated>2014-10-15T17:10:50+01:00</updated>
   <id>http://blog.distinctionl.com/</id>
   <author>
     <name><![CDATA[Oliver Woodford]]></name>
@@ -18,10 +18,8 @@
     <link href="http://blog.distinctionl.com/blog/2014/09/27/the-perils-of-overfitting/"/>
     <updated>2014-09-27T10:59:37+01:00</updated>
     <id>http://blog.distinctionl.com/blog/2014/09/27/the-perils-of-overfitting</id>
-    <content type="html"><![CDATA[<p>Given my last blog post on using learning curves to diagnose over or under-fitting, it&rsquo;s a fitting ;) time to share this video. In it some talented folks from Brown University and Georgia Tech lay bare the perils of both over and under-fitting, in a rather original way. So without further ado, take it away guys&hellip;</p>
-
-<iframe width="640" height="360" src="//www.youtube.com/embed/fJMXDlNkYvU?rel=0" frameborder="0" allowfullscreen></iframe>
-
+    <content type="html"><![CDATA[<p>Given my last blog post on using learning curves to diagnose over or under-fitting, it&#39;s a fitting ;) time to share this video. In it some talented folks from Brown University and Georgia Tech lay bare the perils of both over and under-fitting, in a rather original way. So without further ado, take it away guys&#8230; 
+<iframe width="640" height="360" src="//www.youtube.com/embed/fJMXDlNkYvU?rel=0" frameborder="0" allowfullscreen></iframe></p>
 ]]></content>
   </entry>
   
