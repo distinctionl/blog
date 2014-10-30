@@ -9,7 +9,7 @@
   <meta name="author" content="Oliver Woodford">
 
   
-  <meta name="description" content="I&#39;ve been thinking a bit in recent months about whether I should move to using a new programming langauge. Traditionally I&#39;ve done &hellip;">
+  <meta name="description" content="This post gives me the chance to show off something I&#39;ve just added support for: LaTeX equations using MathJax. Beautiful! Let&#39;s imagine that &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -73,6 +73,62 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/10/30/ml-fitting-of-complex-distributions/">ML Fitting of Complex Distributions</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2014-10-30T15:52:23+00:00" pubdate data-updated="true">Oct 30th, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This post gives me the chance to show off something I&#39;ve just added support for: LaTeX equations using MathJax. Beautiful!</p>
+
+<p>Let&#39;s imagine that I have some training data, ${\x_1,..,\x_N}$, and a non-negative function, $f(\x;\params)$, parameterized by $\params$, that I want to use as a probability distribution to fit to the data. The probability distribution is therefore given by</p>
+
+<p>$$
+p(\x;\params) = \frac{f(\x;\params)}{\int f(\x;\params)\d\x}.
+$$</p>
+
+<p>A common thing to do is to maximize the likelihood (ML learning, not to be confused with machine learning) of the data, w.r.t. $\params$, i.e.</p>
+
+<p>$$
+\params^* = \argmax_\params \left(\int f(\x;\params)\d\x\right)^{-N}\prod_{i=1}^N f(\x_i;\params).
+$$</p>
+
+<p>Whilst $f(\x;\params)$ is computable (since we defined it), the integral $\int f(\x;\params) \d \x$ may not not be. For example, this is the case with complex models such as those defined by many deep networks. This creates a problem in ML fitting of the distribution.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/10/30/ml-fitting-of-complex-distributions/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -295,6 +351,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/10/30/ml-fitting-of-complex-distributions/">ML fitting of complex distributions</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/10/15/the-future-of-technical-computing/">The future of technical computing</a>
       </li>
     
@@ -308,10 +368,6 @@
     
       <li class="post">
         <a href="/blog/2014/09/08/get-lost-in-the-cloud/">Get lost in the cloud</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/09/02/deepmind-patents-i/">DeepMind patents: I</a>
       </li>
     
   </ul>

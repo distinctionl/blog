@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://blog.distinctionl.com/blog/2014/10/30/ml-fitting-of-complex-distributions/</loc>
+    <lastmod>2014-10-30T15:52:23+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.distinctionl.com/blog/2014/10/15/the-future-of-technical-computing/</loc>
     <lastmod>2014-10-15T13:02:54+01:00</lastmod>
     <priority>0.8</priority>
@@ -35,14 +41,14 @@
   
   <url>
     <loc>http://blog.distinctionl.com/blog/archives/</loc>
-    <lastmod>2014-10-23T15:32:06+01:00</lastmod>
+    <lastmod>2014-10-30T17:39:02+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://blog.distinctionl.com/</loc>
-    <lastmod>2014-10-23T15:32:06+01:00</lastmod>
+    <lastmod>2014-10-30T17:39:02+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
