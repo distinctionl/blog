@@ -4,7 +4,7 @@
   <title><![CDATA[The Distinctionl Blog]]></title>
   <link href="http://blog.distinctionl.com/atom.xml" rel="self"/>
   <link href="http://blog.distinctionl.com/"/>
-  <updated>2014-10-31T15:02:28+00:00</updated>
+  <updated>2014-10-31T15:31:19+00:00</updated>
   <id>http://blog.distinctionl.com/</id>
   <author>
     <name><![CDATA[Oliver Woodford]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Profiling performance]]></title>
+    <link href="http://blog.distinctionl.com/blog/2014/10/31/profiling-performance/"/>
+    <updated>2014-10-31T15:11:52+00:00</updated>
+    <id>http://blog.distinctionl.com/blog/2014/10/31/profiling-performance</id>
+    <content type="html"><![CDATA[<p>If you&#39;ve ever had to speed up some code you wrote, then hopefully you&#39;ll know about code profiling. If not then you really need to find out about it! What profiling does is tell you where your program spent most of its computation time. Knowing this allows you to focus your code optimization where it really matters - on the slow bits!</p>
+
+<p>But what about how <em>well</em> your code, or rather your algorithm, performs? If you want to improve your algorithms performance, and it consists of a set of distinct tasks, it&#39;s worth knowing which of those tasks you should spend your time improving in order to get a gain in performance. No point wasting your time developing a much better object detector if it&#39;s your object classifier that sucks! But in order to know which tasks to improve, we need to perform some kind of profiling on algorithm performance, instead of computation time. How?</p>
+
+<p>Well that&#39;s where another great tip from <a href="http://en.wikipedia.org/wiki/Andrew_Ng">Andrew Ng</a>&#39;s <a href="http://www.coursera.org/course/ml">Machine Learning course</a> can help you out: <strong>ceiling analysis</strong>. It&#39;s a way of profiling performance of algorithms. I&#39;ll let Andrew explain <a href="https://class.coursera.org/ml-003/lecture/113">how it works</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ML fitting of complex distributions]]></title>

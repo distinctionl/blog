@@ -9,7 +9,7 @@
   <meta name="author" content="Oliver Woodford">
 
   
-  <meta name="description" content="This post gives me the chance to show off something I&#39;ve just added support for: LaTeX equations using MathJax. Beautiful! Let&#39;s imagine that &hellip;">
+  <meta name="description" content="If you&#39;ve ever had to speed up some code you wrote, then hopefully you&#39;ll know about code profiling. If not then you really need to find out &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -73,6 +73,47 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/10/31/profiling-performance/">Profiling Performance</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2014-10-31T15:11:52+00:00" pubdate data-updated="true">Oct 31st, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If you&#39;ve ever had to speed up some code you wrote, then hopefully you&#39;ll know about code profiling. If not then you really need to find out about it! What profiling does is tell you where your program spent most of its computation time. Knowing this allows you to focus your code optimization where it really matters - on the slow bits!</p>
+
+<p>But what about how <em>well</em> your code, or rather your algorithm, performs? If you want to improve your algorithms performance, and it consists of a set of distinct tasks, it&#39;s worth knowing which of those tasks you should spend your time improving in order to get a gain in performance. No point wasting your time developing a much better object detector if it&#39;s your object classifier that sucks! But in order to know which tasks to improve, we need to perform some kind of profiling on algorithm performance, instead of computation time. How?</p>
+
+<p>Well that&#39;s where another great tip from <a href="http://en.wikipedia.org/wiki/Andrew_Ng">Andrew Ng</a>&#39;s <a href="http://www.coursera.org/course/ml">Machine Learning course</a> can help you out: <strong>ceiling analysis</strong>. It&#39;s a way of profiling performance of algorithms. I&#39;ll let Andrew explain <a href="https://class.coursera.org/ml-003/lecture/113">how it works</a>.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -351,6 +392,10 @@ $$</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/10/31/profiling-performance/">Profiling performance</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/10/30/ml-fitting-of-complex-distributions/">ML fitting of complex distributions</a>
       </li>
     
@@ -364,10 +409,6 @@ $$</p>
     
       <li class="post">
         <a href="/blog/2014/09/22/analysing-learning-curves/">Analysing learning curves</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/09/08/get-lost-in-the-cloud/">Get lost in the cloud</a>
       </li>
     
   </ul>
