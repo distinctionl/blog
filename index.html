@@ -105,19 +105,19 @@
 
   <div class="entry-content"><p>This post gives me the chance to show off something I&#39;ve just added support for: LaTeX equations using MathJax. Beautiful!</p>
 
-<p>Let&#39;s imagine that I have some training data, ${\x_1,..,\x_N}$, and a non-negative function, $f(\x;\params)$, parameterized by $\params$, that I want to use as a probability distribution to fit to the data. The probability distribution is therefore given by</p>
+<p>Let&#39;s imagine that I have some training data, $\{\x_1,..,\x_N\}$, and a non-negative function, $f(\x;\params)$, parameterized by $\params$, that I want to use as a probability distribution to fit to the data. The probability distribution is therefore given by</p>
 
 <p>$$
-p(\x;\params) = \frac{f(\x;\params)}{\int f(\x;\params)\d\x}.
+p(\x;\params) = \frac{f(\x;\params)}{\int f(\vect{y};\params)\d\vect{y}}.
 $$</p>
 
 <p>A common thing to do is to maximize the likelihood (ML learning, not to be confused with machine learning) of the data, w.r.t. $\params$, i.e.</p>
 
 <p>$$
-\params^* = \argmax_\params \left(\int f(\x;\params)\d\x\right)^{-N}\prod_{i=1}^N f(\x_i;\params).
+\params^* = \argmax_\params \left(\int f(\vect{y};\params)\d\vect{y}\right)^{-N}\prod_{i=1}^N f(\x_i;\params).
 $$</p>
 
-<p>Whilst $f(\x;\params)$ is computable (since we defined it), the integral $\int f(\x;\params) \d \x$ may not not be. For example, this is the case with complex models such as those defined by many deep networks. This creates a problem in ML fitting of the distribution.</p>
+<p>Whilst $f(\x;\params)$ is computable (since we defined it), the integral $\int f(\vect{y};\params) \d\vect{y}$ may not not be. For example, this is the case with complex models such as those defined by many deep networks. This creates a problem in ML fitting of the distribution.</p>
 
 </div>
   
